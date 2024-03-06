@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Apotecaedro</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -14,14 +14,14 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#support">Support</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Apotecaedro</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -30,26 +30,32 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#support" onclick="toggleMenu()">Support</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+
+    <button id="dark-mode-btn">
+      <img src="./assets/dark-theme-icon.png" alt="Dark Theme" width="20px" height="auto"/>
+      <span>Toggle Dark Mode</span>
+    </button>
+
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/profile-pic.png" alt="Apotecaedro logo" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p1">Welcome to</p>
+        <h1 class="title">Apotecaedro</h1>
+        <p class="section__text__p2">Game Studio</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="location.href='./#support'"
           >
-            Download CV
+            Support Us
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
@@ -57,23 +63,23 @@
         </div>
         <div id="socials-container">
           <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
+            src="./assets/patreon-logo (2).png"
+            alt="Our Patreon profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.patreon.com/Apotecaedro'"
           />
           <img
-            src="./assets/github.png"
-            alt="My Github profile"
+            src="./assets/email.png"
+            alt="Our Contact"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='mailto:apotecaedro@gmail.com'"
           />
         </div>
       </div>
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+      <h1 class="title">About Us</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
@@ -86,31 +92,27 @@
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/experience.png"
-                alt="Experience icon"
+                src="./assets/YouTube_dark_icon.png"
+                alt="Youtube icon"
                 class="icon"
+                onclick="location.href='https://www.youtube.com/channel/UCiNoKjRKzMVfYONO9DLib3Q'"
               />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <h3 onclick="location.href='https://www.youtube.com/channel/UCiNoKjRKzMVfYONO9DLib3Q'">YouTube Channel</h3>
+              <p>Game reviews <br />Release trailers</p>
             </div>
             <div class="details-container">
               <img
-                src="./assets/education.png"
-                alt="Education icon"
+                src="./assets/itch-io-icon.png"
+                alt="Itch.io icon"
                 class="icon"
               />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <h3>Itch.io Page</h3>
+              <p>Full-length games<br />Game jam projects</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              We're a team of brazilian content creators who specialize in producing electronic games, video reviews, guides, and more. Join us as we share our diverse range of content and our enthusiasm for gaming.
             </p>
           </div>
         </div>
@@ -119,132 +121,22 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#support'"
       />
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
+    <section id="support">
+      <p class="section__text__p1">Do you enjoy our content and want to see us grow?</p>
+      <h1 class="title">Support Us</h1>
+      <div class="support-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+            <!-- Link de preview -->
+            <a class="preview-link" onclick="location.href='https://www.patreon.com/Apotecaedro'" onmouseover="showPreview(event)" onmouseout="hidePreview() ">Our Patreon</a>
+
+            <!-- Modal de preview -->
+            <div id="previewModal" class="modal">
+              <!-- Aqui você pode inserir uma imagem de prévia da página do Patreon -->
+              <img src="./assets/patreon-logo (2).png" alt="Preview da Página do Patreon" scale=0.1">
             </div>
           </div>
         </div>
@@ -257,80 +149,64 @@
       />
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section__text__p1">Browse Our Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
+      <div class="support-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
-                alt="Project 1"
+                src="./assets/jVAnhN.png"
+                alt="Game Mockup Jam"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="support-sub-title project-title">Game Mockup Jam</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://preguisaquente.itch.io/tiny-knight'"
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
+                Itch.io
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/Rustic Printed Stamp (7).png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="support-sub-title project-title">Kenshi Review</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://www.youtube.com/watch?v=PXNVJDXryM8'"
               >
-                Github
+                YouTube
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/Rustic Printed Stamp (8).png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="support-sub-title project-title">Kenshi Challenge</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://www.youtube.com/watch?v=XFg0fL2lPe0'"
               >
-                Github
+                YouTube
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              
             </div>
           </div>
         </div>
@@ -344,7 +220,7 @@
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
+      <h1 class="title">Contact Us</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -352,15 +228,15 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:apotecaedro@gmail.com">Apotecaedrogmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/linkedin.png"
+            src="./assets/YouTube_dark_icon.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.youtube.com/@Apotecaedro/community">YouTube Comunity</a></p>
         </div>
       </div>
     </section>
@@ -369,13 +245,13 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#support">Support</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Apotecaedro. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>

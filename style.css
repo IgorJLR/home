@@ -8,6 +8,8 @@
 }
 
 body {
+  /*background-color: #000000; */
+  
   font-family: "Poppins", sans-serif;
 }
 
@@ -314,20 +316,58 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* Support SECTION */
 
-#experience {
+#support {
   position: relative;
 }
 
-.experience-sub-title {
+/* Estilos para o link de preview */
+.preview-link {
+  cursor: pointer;
+  color: blue;
+  max-width: 30px; /* Definir a largura máxima do modal */
+  max-height: 30px; /* Definir a altura máxima do modal */
+  text-decoration: underline;
+}
+
+/* Estilos para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 30px; /* Definir a largura máxima do modal */
+  max-height: 30px; /* Definir a altura máxima do modal */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 0; /* Inicialmente, o modal é transparente */
+  transition: opacity 0.3s ease; /* Adiciona uma transição suave para a propriedade de opacidade */
+}
+
+.modal img {
+  max-width: 100%; /* Garante que a imagem seja dimensionada corretamente */
+  height: auto;
+  display: block;
+  margin: auto; /* Centraliza a imagem verticalmente */
+}
+
+/* Estilos para o modal quando está aberto */
+.modal.active {
+  display: block;
+  opacity: 1; /* Torna o modal completamente visível */
+}
+
+.support-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.support-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -429,4 +469,183 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* DARK THEME */
+
+#dark-mode-btn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 9999; /* Ensure the button stays on top of other content */
+  padding: 10px;
+  border: none;
+  background-color: #ffffff00;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Adjust the gap between the image and text */
+}
+
+/* Adjustments for dark mode */
+#dark-mode-btn.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.dark-theme {
+  background-color: #000000; 
+}
+
+.dark-theme p {
+  color: white;
+}
+
+.dark-theme a {
+  color: white;
+}
+
+.dark-theme .btn-color-1,
+.dark-theme .btn-color-2 {
+  border-color: rgb(181, 181, 181);
+}
+
+.dark-theme .btn-color-1:hover,
+.dark-theme .btn-color-2:hover {
+  background: rgb(181, 181, 181);
+  color: black;
+}
+
+.dark-theme .btn-color-1:hover {
+  border-color: rgb(0, 0, 0);
+}
+
+.dark-theme .btn-color-2 {
+  border-color: rgb(0, 0, 0);
+}
+
+.dark-theme .menu-links {
+  background-color: black;
+}
+
+.dark-theme .menu-links a {
+  color: white;
+}
+
+.dark-theme .hamburger-icon span {
+  background-color: white;
+}
+
+.dark-theme .hamburger-icon.open span:first-child,
+.dark-theme .hamburger-icon.open span:last-child {
+  background-color: black;
+}
+
+/* Adjustments for dark mode */
+.dark-theme {
+  background-color: #000000; 
+}
+
+.dark-theme * {
+  color: white !important;
+}
+
+.dark-theme a {
+  color: white !important;
+}
+
+.dark-theme .btn-color-1,
+.dark-theme .btn-color-2 {
+  border-color: rgb(181, 181, 181);
+}
+
+.dark-theme .btn-color-1:hover,
+.dark-theme .btn-color-2:hover {
+  background: rgb(181, 181, 181);
+  color: black;
+}
+
+.dark-theme .btn-color-1:hover {
+  border-color: rgb(0, 0, 0);
+}
+
+.dark-theme .btn-color-2 {
+  border-color: rgb(0, 0, 0);
+}
+
+.dark-theme .menu-links {
+  background-color: black;
+}
+
+.dark-theme .menu-links a {
+  color: white;
+}
+
+.dark-theme .hamburger-icon span {
+  background-color: white;
+}
+
+.dark-theme .hamburger-icon.open span:first-child,
+.dark-theme .hamburger-icon.open span:last-child {
+  background-color: black;
+}
+
+/* Adjustments for dark mode */
+.dark-theme {
+  background-color: #000000; 
+}
+
+.dark-theme * {
+  color: white !important;
+}
+
+.dark-theme a {
+  color: white !important;
+}
+
+.dark-theme .btn-color-1,
+.dark-theme .btn-color-2 {
+  border-color: rgb(181, 181, 181);
+}
+
+.dark-theme .btn-color-1:hover,
+.dark-theme .btn-color-2:hover {
+  background: rgb(181, 181, 181);
+  color: black;
+}
+
+.dark-theme .btn-color-1:hover {
+  border-color: rgb(0, 0, 0);
+}
+
+.dark-theme .btn-color-2 {
+  border-color: rgb(255, 255, 255);
+}
+
+.dark-theme .menu-links {
+  background-color: black;
+}
+
+.dark-theme .menu-links a {
+  color: white;
+}
+
+.dark-theme .hamburger-icon span {
+  background-color: white;
+}
+
+.dark-theme .details-container {
+  background-color: rgb(0, 0, 0);
+}
+
+.dark-theme .hamburger-icon.open span:first-child,
+.dark-theme .hamburger-icon.open span:last-child {
+  background-color: black;
+}
+
+/* Invert icon colors */
+.dark-theme .icon {
+  filter: invert(100%);
 }
