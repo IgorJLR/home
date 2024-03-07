@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 body {
@@ -26,6 +27,23 @@ p {
 a,
 .btn {
   transition: all 300ms ease;
+}
+
+
+/* Style the canvas container */
+#canvas-container {
+  position: absolute;
+  top:50%;
+  left:-20px;
+  font-size: 0;
+  overflow: hidden;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 1px; /* Use viewport width */
+  height: 80vh; /* Use viewport height */
+  z-index: 1; /* Ensure it appears on top */
+  pointer-events: none; /* Allows clicks to go through the canvas to underlying elements */
 }
 
 /* DESKTOP NAV */
