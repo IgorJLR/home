@@ -101,3 +101,12 @@
     text-align: justify;
   }
 }
+
+.loading {
+  filter: blur(10px) grayscale(100%);
+}
+
+.loaded {
+  filter: blur(0px) grayscale(0%);
+  transition: 0.7s ease-in-out;
+}
