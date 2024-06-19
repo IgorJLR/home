@@ -281,29 +281,31 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
+/* Cursos SECTION */
 
-#about {
+#cursos {
   position: relative;
 }
 
-.about-containers {
+.cursos-containers {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
-.about-details-container {
+.cursos-details-container {
   justify-content: center;
   flex-direction: column;
 }
 
-.about-containers,
-.about-details-container {
+.cursos-containers {
   display: flex;
+  flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 20px; /* Espaçamento entre os itens */
 }
 
-.about-pic {
+.cursos-pic {
   border-radius: 2rem;
 }
 
@@ -334,9 +336,10 @@ section {
   margin: auto 0;
 }
 
-/* Support SECTION */
+/* Apostilas SECTION */
 
-#support {
+/* Apostilas SECTION */
+#apostilas {
   position: relative;
 }
 
@@ -344,8 +347,6 @@ section {
 .preview-link {
   cursor: pointer;
   color: blue;
-  max-width: 30px; /* Definir a largura máxima do modal */
-  max-height: 30px; /* Definir a altura máxima do modal */
   text-decoration: underline;
 }
 
@@ -357,45 +358,43 @@ section {
   background-color: #fefefe;
   padding: 20px;
   border: 1px solid #888;
-  max-width: 30px; /* Definir a largura máxima do modal */
-  max-height: 30px; /* Definir a altura máxima do modal */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  opacity: 0; /* Inicialmente, o modal é transparente */
-  transition: opacity 0.3s ease; /* Adiciona uma transição suave para a propriedade de opacidade */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  max-width: 80%; /* Adjust as necessary */
+  max-height: 80%; /* Adjust as necessary */
 }
 
 .modal img {
-  max-width: 100%; /* Garante que a imagem seja dimensionada corretamente */
+  max-width: 100%;
   height: auto;
   display: block;
-  margin: auto; /* Centraliza a imagem verticalmente */
+  margin: auto;
 }
 
 /* Estilos para o modal quando está aberto */
 .modal.active {
   display: block;
-  opacity: 1; /* Torna o modal completamente visível */
+  opacity: 1;
 }
 
-.support-sub-title {
+.apostila-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.support-details-container {
+.apostilas-details-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .article-container {
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
 }
@@ -403,7 +402,7 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: center;
   gap: 0.5rem;
 }
 
@@ -411,15 +410,15 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
+/* Cartas SECTION */
 
-#projects {
+#cartas {
   position: relative;
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  flex: 1 1 30%; /* Ajuste a largura dos itens conforme necessário */
+  max-width: 400px; /* Defina um máximo para evitar que se estendam demais */
 }
 
 .project-img {
@@ -438,27 +437,30 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
+/* contato */
 
-#contact {
+#contato {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 70vh;
 }
 
-.contact-info-upper-container {
+.contato-info-upper-container {
   display: flex;
+  flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 1px; /* Espaçamento entre os itens */
   justify-content: center;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  margin: 1rem auto;
+  padding: 0.1rem;
 }
 
-.contact-info-container {
+.contato-info-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -466,11 +468,11 @@ article .icon {
   margin: 1rem;
 }
 
-.contact-info-container p {
-  font-size: larger;
+.contato-info-container p {
+  font-size: medium;
 }
 
-.contact-icon {
+.contato-icon {
   cursor: default;
 }
 
